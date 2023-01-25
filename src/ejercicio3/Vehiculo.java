@@ -34,7 +34,7 @@ public class Vehiculo {
 		return "Vehiculo [cilindrada=" + cilindrada + ", potencia=" + potencia + ", emisiones=" + emisiones + "]";
 	}
 	public double calcularImpuesto() {
-		double Ppotencia= 4, Pcilindrada=5, Pemisiones=10;
+		double Ppotencia= 3, Pcilindrada=0.12, Pemisiones=10;
 		return (potencia*Ppotencia) + (cilindrada *Pcilindrada) + (emisiones* Pemisiones);
 		
 	}
