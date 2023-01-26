@@ -29,7 +29,7 @@ public class Principal {
 		System.out.println("Dígame que clindrada tiene su vehiculo");
 		cilindrada=Leer.datoDouble();
 		do {
-		System.out.println("\nPulse 1 si su cehiculo tiene 0 emisiones\n"
+		System.out.println("\nPulse 1 si su vehiculo tiene 0 emisiones\n"
 				+ "Pulse 2 si su vehiculo es ECO\n"
 				+ "Pulse 3 si su vehiculo es Tipo B\n"
 				+ "Pulse 4 si su vehiculo es tipo C\n");
