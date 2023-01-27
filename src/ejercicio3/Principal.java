@@ -36,8 +36,9 @@ public class Principal {
 		emisiones=Leer.datoInt();
 		if (emisiones>4) 
 			System.out.println("Opción no encontrada");
-		
-		}while (emisiones>4);
+		if(emisiones<1)
+			System.out.println("Opción no encontrada");
+		}while (emisiones>4 && emisiones<1);
 		Motocicleta moto= new Motocicleta(cilindrada, potencia, emisiones, 60);
 		Furgoneta fragoneta= new Furgoneta(cilindrada, potencia, emisiones, 50);
 		Coche cochecito= new Coche(cilindrada, potencia, emisiones, 25);

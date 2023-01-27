@@ -23,12 +23,12 @@ public class Principal {
 		 * 
 		 */
 		String fecha = "22-10-2023";
-		Electronica ele1 = new Electronica(1500, "iphone 13", "10c", 20);
-		Electronica ele2 = new Electronica(600, "TV LG23", "20c", 20);
-		Ropa rop1 = new Ropa(20, "Camisa", "30a");
-		Ropa rop2 = new Ropa(35, "Pantalon", "40a");
-		Alimentacion ali1 = new Alimentacion(1.5, "Platanos", "50b", 0.30);
-		Alimentacion ali2 = new Alimentacion(0.35, "Pan", "60b", 0.5);
+		Producto ele1 = new Electronica(150, "iphone 13", "10c", 20);
+		Producto ele2 = new Electronica(60, "TV LG23", "20c", 20);
+		Producto rop1 = new Ropa(20, "Camisa", "30a");
+		Producto rop2 = new Ropa(35, "Pantalon", "40a");
+		Producto ali1 = new Alimentacion(1.5, "Platanos", "50b", 0.30);
+		Producto ali2 = new Alimentacion(0.35, "Pan", "60b", 0.5);
 		LineaDeVenta ln1= new LineaDeVenta (ele1, 2);
 		LineaDeVenta ln2= new LineaDeVenta (ele2, 3);
 		LineaDeVenta ln3= new LineaDeVenta (rop1, 1);
@@ -37,7 +37,12 @@ public class Principal {
 		LineaDeVenta ln6= new LineaDeVenta (ali2, 3);
 		LineaDeVenta lineasTickect []={ln1, ln2,ln3, ln4, ln5, ln6};
 		Venta tickect = new Venta (lineasTickect, fecha);
-		
+		ln1.calcularPrecioT();
+		ln2.calcularPrecioT();
+		ln3.calcularPrecioT();
+		ln4.calcularPrecioT();
+		ln5.calcularPrecioT();
+		ln6.calcularPrecioT();
 		tickect.calcularPrecioTC();
 		tickect.imprimirTickect();
 	}

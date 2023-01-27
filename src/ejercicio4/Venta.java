@@ -50,10 +50,10 @@ public class Venta {
 		return precioTC;
 	}
 	public void imprimirTickect () {
-		System.out.printf("\t\t\t\t%s",fecha);
+		System.out.printf("\t\t\t\t%s\n",fecha);
 		for (int i = 0; i < lineaTickect.length; i++) {
 			lineaTickect[i].imprimirLineaTicket();
 		}
-		System.out.printf("\t\t\t\t %.2f", precioTC);
+		System.out.printf("\n\t\t\t\t %.2f", precioTC);
 	}
 }

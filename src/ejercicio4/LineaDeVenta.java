@@ -45,6 +45,6 @@ public class LineaDeVenta {
 		return precioT;
 	}
 	public void imprimirLineaTicket () {
-		System.out.printf("%d\t%s\t%d\t%.2f", cantidad, produc.getNombre(), produc.getPrecioUni(), precioT);
+		System.out.printf("%d\t%s\t%.2f\t%.2f\n", cantidad, produc.getNombre(), produc.getPrecioUni(), precioT);
 	}
 }
