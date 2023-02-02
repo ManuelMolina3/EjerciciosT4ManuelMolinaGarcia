@@ -22,6 +22,6 @@ public class Electronica extends Producto{
 		return "Electronica [impuestoEsp=" + impuestoEsp + ", toString()=" + super.toString() + "]";
 	}
 	public double calcularPrecioUni () {
-		return super.calcularPrecioUni()*impuestoEsp;
+		return super.calcularPrecioUni()+impuestoEsp;
 	}
 }

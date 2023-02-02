@@ -42,6 +42,7 @@ public class Venta {
 		return "Venta [lineaTikect=" + Arrays.toString(lineaTickect) + ", fecha=" + fecha + ", precioTC=" + precioTC
 				+ "]";
 	}
+	
 	public double calcularPrecioTC () {
 	
 		for (int i = 0; i < lineaTickect.length; i++) {

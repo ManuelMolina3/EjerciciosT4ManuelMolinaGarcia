@@ -36,4 +36,12 @@ public class Alimentacion extends Producto{
 		else 
 			return super.calcularPrecioUni();
 	}
-}
+	public void imprimirMensaje() {
+		int dos=2;
+		if (generarCaducidad()<dos)
+			System.out.println("QUE CADUCA");
+		else
+			System.out.println("dura tiempo todavia");
+			
+	}
+}	

@@ -39,7 +39,9 @@ public class LineaDeVenta {
 	public String toString() {
 		return "LineaDeVenta [produc=" + produc + ", cantidad=" + cantidad + ", precioT=" + precioT + "]";
 	}
-	
+	public double calcularPrecioUNA(Producto p) {
+		return p.calcularPrecioUni();
+	}
 	public double calcularPrecioT () {
 		precioT=cantidad * produc.calcularPrecioUni();
 		return precioT;
