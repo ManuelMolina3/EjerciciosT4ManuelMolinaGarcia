@@ -51,9 +51,19 @@ public class Venta {
 		return precioTC;
 	}
 	public void imprimirTickect () {
+		Alimentacion aux;
 		System.out.printf("\t\t\t\t%s\n",fecha);
 		for (int i = 0; i < lineaTickect.length; i++) {
+			if (lineaTickect[i].getProduc() instanceof Alimentacion) {
+				/*CASTEO ENTRA SEGURO*/
+				aux= (Alimentacion)lineaTickect[i].getProduc();
+				aux.imprimirMensaje();
+				/*SI LO QUIERES HACER SIN METERLO EN UNA VARIABLE HAY QUE PONERLE PARENTESIS AL CASTEO*/
+				((Alimentacion)lineaTickect[i].getProduc()).imprimirMensaje();
+			}
 			lineaTickect[i].imprimirLineaTicket();
+			
+			
 		}
 		System.out.printf("\n\t\t\t\t %.2f", precioTC);
 	}

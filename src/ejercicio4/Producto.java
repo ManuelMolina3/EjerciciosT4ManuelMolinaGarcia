@@ -1,6 +1,6 @@
 package ejercicio4;
 
-public class Producto {
+public class Producto implements IImpuesto, IImprimirPaplinas{
 	private double precioUni;
 	private String nombre;
 	private String id;
@@ -34,6 +34,16 @@ public class Producto {
 	}
 	public double calcularPrecioUni () {
 		return precioUni;
+	}
+	@Override
+	public double calcularIVA(double porcentaje) {
+		// TODO Auto-generated method stub
+		return precioUni*porcentaje/100;
+	}
+	@Override
+	public void imprimirCod() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
